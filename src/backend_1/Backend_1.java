@@ -1,33 +1,30 @@
 
 package backend_1;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 
 public class Backend_1 {
 
   
     public static void main(String[] args) {
-
-        String nombre;
-                String apellido;
-                        int edad;
-                        int fecha_nacimiento;
-                        int edad2;
-
-        boolean genero;
-
-                nombre = ("Kevin");
-                        apellido = ("Florec");
-                        edad = (25);
-                        genero = true;
-                        fecha_nacimiento = (2026 - edad);
-                        edad2 = (2026 - fecha_nacimiento);
-
-                        for (int incremento = 1; incremento <= 10; incremento++){
-                            System.out.println("Se incrementa " + incremento);
-                        }
-        System.out.println("El nombre es " + nombre + " el apellido es " + apellido + " la edad es " + edad);
-        System.out.println("La fecha de nacimiento es " +fecha_nacimiento);
-        System.out.println("La edad 2 es: " +edad2);
+        
+           
+    Scanner entrada = new Scanner(System.in).useLocale(Locale.US);
+    
+        System.out.println("Hola Estudiante");
+        System.out.println("Dime cual es tu nota: ");
+        
+        float number = entrada.nextFloat();
+        
+        if (number >= 3.0){System.out.println("Felicidades, Aprobaste");}
+        else {System.out.println("Lo siento, no aprobaste. Sigue intentandolo");}
+    
+    entrada.close();
+    
+    
+    
     
     
     
